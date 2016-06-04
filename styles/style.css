@@ -75,6 +75,7 @@ header #topBar li a {
 	border-bottom: solid 1px #d06faa;
 }
 
+
 /********************
 
 #welcomeSection
@@ -94,7 +95,7 @@ header #topBar li a {
 }
 
 #welcomeSection .infos {
-	top: 27vh;
+	top: 24vh;
 	text-align: center;
 	position: absolute;
 	z-index: 12;
@@ -118,7 +119,7 @@ header #topBar li a {
 }
 
 a#arrow {
-	margin-top: 60px;
+	margin-top: 42px;
 	text-decoration: none;
 	color: #ffffff;
 	cursor: pointer;
