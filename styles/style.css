@@ -83,25 +83,56 @@ Header
 ********************/
 
 header{
-	font-size: 15px;
+	position: fixed;
+	z-index: 100;
+	background-color: #FFFFFF;
 	height: 70px;
-	background-color: aqua;
+	width: 100vw;
+}
+
+nav{
+	font-size: 24px;
 }
 
 header #topBar li{
+	margin-top: 20px;
 	display: inline-block;
-	margin-right: 10px;
-}
-
-header #topBar li#last{
-/*	margin: 0;*/
 }
 
 header #topBar li a{
+	font-weight: 100;
+	color: #000000;
 	text-decoration: none;
 }
 
 #topBar img#logoHeader{
+	margin-top: 10px;
 	width: 80px;
 	height: auto;
 }
+
+
+.activePage{
+	padding-bottom: 4px;
+	border-bottom: solid 1px #d06faa;
+}
+
+/********************
+
+#welcomeSection
+
+********************/
+
+#welcomeSection img{
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	z-index: 10;
+}
+
+#welcomeSection{
+	overflow-x: hidden;
+}
+
+
+
