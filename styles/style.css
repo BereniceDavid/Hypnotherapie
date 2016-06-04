@@ -54,7 +54,7 @@ nav {
 }
 
 header #topBar li {
-	margin-top: 20px;
+	margin-top: 10px;
 	display: inline-block;
 }
 
@@ -74,7 +74,6 @@ header #topBar li a {
 	padding-bottom: 4px;
 	border-bottom: solid 1px #d06faa;
 }
-
 
 /********************
 
