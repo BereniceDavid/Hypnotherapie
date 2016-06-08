@@ -33,6 +33,9 @@ body {
 .semiBold {
 	font-weight: 600;
 }
+::-webkit-scrollbar { 
+    display: none; 
+}
 
 
 /********************
@@ -41,38 +44,50 @@ Header
 
 ********************/
 
-header {
+nav {
+	font-size: 24px;
+	width: 100vw;
 	position: fixed;
 	z-index: 100;
 	background-color: #FFFFFF;
-	height: 70px;
-	width: 100vw;
-}
-
-nav {
-	font-size: 24px;
 }
 
 header #topBar li {
-	margin-top: 10px;
-	display: inline-block;
+	list-style: none;
 }
 
 header #topBar li a {
 	font-weight: 100;
 	color: #000000;
 	text-decoration: none;
+	display: block;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 #topBar img#logoHeader {
-	margin-top: 10px;
 	width: 80px;
 	height: auto;
+}
+
+header #topBar ul {
+	position: relative;
+}
+
+#logoLink {
+	position: absolute;
+	z-index: 50;
+	top: 5vh;
+	left: 46.5%;
 }
 
 .activePage {
 	padding-bottom: 4px;
 	border-bottom: solid 1px #d06faa;
+}
+
+header #topBar li:hover a {
+	color: lightslategrey;
 }
 
 
@@ -123,4 +138,17 @@ a#arrow {
 	text-decoration: none;
 	color: #ffffff;
 	cursor: pointer;
+}
+
+
+/********************
+
+#whoAmI
+
+********************/
+
+#whoAmI h1 {
+	display: inline-block;
+	padding-bottom: 4px;
+	border-bottom: solid 1px #d06faa;
 }
