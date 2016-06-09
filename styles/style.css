@@ -78,7 +78,8 @@ header #topBar ul {
 	position: absolute;
 	z-index: 50;
 	top: 5vh;
-	left: 46.5%;
+	left: 50vw;
+	margin-left: -40px;
 }
 
 .activePage {
