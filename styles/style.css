@@ -4,11 +4,26 @@ General
 
 ********************/
 
-body {
+body,
+html {
 	font-family: 'Josefin Sans', 'Arial', sans-serif;
-	margin: none;
-	padding: none;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
 }
+
+button:focus,
+textarea:focus,
+input:focus {
+	outline: 0;
+}
+
+
+/*
+.container {
+	width: 90vw;
+}
+*/
 
 .left {
 	float: left;
@@ -34,8 +49,8 @@ body {
 	font-weight: 600;
 }
 
-::-webkit-scrollbar {
-	display: none;
+.justify {
+	text-align: justify;
 }
 
 
@@ -45,7 +60,7 @@ Header
 
 ********************/
 
-nav {
+header {
 	font-size: 24px;
 	width: 100vw;
 	position: fixed;
@@ -64,6 +79,8 @@ header #topBar li a {
 	text-decoration: none;
 	display: inline-block;
 	padding: 5px;
+	transition: all ease 0.3s;
+	border-bottom: 1px solid transparent;
 }
 
 #topBar img#logoHeader {
@@ -83,12 +100,9 @@ header #topBar ul {
 	margin-left: -40px;
 }
 
-.activePage {
-	border-bottom: solid 1px #d06faa;
-}
-
 header #topBar li:hover a {
-	color: lightslategrey;
+	color: #34495e;
+	border-bottom: 1px solid #d06faa;
 }
 
 
@@ -101,7 +115,6 @@ INDEX.HTML
 ********************/
 
 #welcomeSection {
-	overflow-x: hidden;
 	position: relative;
 	z-index: 10;
 	color: #FFFFFF;
@@ -143,7 +156,7 @@ INDEX.HTML
 	font-size: 25px;
 	padding: 10px 20px;
 	border-radius: 5px;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: transparent;
 	border: 1px solid #FFFFFF;
 	transition: all 0.4s ease;
 }
@@ -151,6 +164,11 @@ INDEX.HTML
 #welcomeSection button:hover {
 	color: rgba(0, 0, 0, 0.5);
 	background-color: #FFF;
+}
+
+#welcomeSection button:active {
+	background-color: rgba(255, 255, 255, 0.7);
+	border-color: rgba(255, 255, 255, 0.2);
 }
 
 a#arrow {
@@ -173,9 +191,43 @@ a#arrow {
 }
 
 #whoAmI h1 {
-	display: inline-block;
-	padding-bottom: 4px;
-	border-bottom: solid 1px #d06faa;
+	padding-bottom: 5px;
+	margin-bottom: 60px;
+	border-bottom: solid 1px #e0a9ce;
+}
+
+#whoAmI video {
+	height: auto;
+	width: 400px;
+}
+
+#whoAmI img {
+	border-radius: 5px;
+	height: 180px;
+	width: 140px;
+}
+
+#description {
+	position: relative;
+	height: 180px;
+}
+
+#whoAmI button {
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+	color: #FFF;
+	font-size: 16px;
+	padding: 6px 16px;
+	border-radius: 5px;
+	background-color: #d06faa;
+	border: 1px solid #FFF;
+	transition: all 0.4s ease;
+}
+
+#whoAmI button:hover {
+	color: rgba(0, 0, 0, 0.5);
+	background-color: #FFF;
 }
 
 
