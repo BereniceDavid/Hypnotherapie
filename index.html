@@ -12,13 +12,13 @@
 
 <body>
 	<header>
-		<nav id="topBar" class="center">
+		<nav id="topBar">
 			<div class="row">
-				<ul>
-					<li class="col-md-offset-1 col-md-2 col-sm-offset-1 col-sm-2"><a href="index.html" class="activePage" title="Accueil">Accueil</a></li>
-					<li class="col-md-2 col-sm-2"><a href="#" title="Qui suis-je ?">Qui suis-je ?</a></li>
-					<li class="col-md-offset-2 col-md-2 col-sm-3"><a href="#" title="En savoir plus sur l'hypnothérapie">L'hypnothérapie</a></li>
-					<li class="col-md-2 col-sm-2" id="last"><a href="#" title="Contact">Contact</a></li>
+				<ul class="center">
+					<li class="col-md-offset-1 col-md-2 col-sm-2 col-xs-12"><a href="index.html" title="En savoir plus sur l'hypnothérapie">L'hypnothérapie</a></li>
+					<li class="col-md-2 col-sm-2 col-xs-12"><a href="#" title="Qui suis-je ?">Qui suis-je ?</a></li>
+					<li class="col-md-offset-2 col-md-2 col-sm-2 col-xs-12"><a href="#" title="Contact">Contact</a></li>
+					<li class="col-md-2 col-sm-2"><a href="#" title="Témoignages">Témoignages</a></li>
 				</ul>
 				<a href="index.html" title="Aller à l'accueil" id="logoLink"><img id="logoHeader" src="images/logo_hypno-01.png" alt="logo Éveil & Vous" /></a>
 			</div>
@@ -53,6 +53,60 @@
 			</div>
 		</div>
 	</section>
+	<section id="forWhat">
+		<!--	To do  -->
+	</section>
+	<section id="infosContact">
+		<div class="row center">
+			<iframe class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-12 " src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=500&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=jl1urnusetsclf6l07mq36204s%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=Europe%2FParis" style="border-width:0" width="900" height="500" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div class="row center" id="contactForm">
+			<h1 class="col-md-offset-2 col-md-4">Prendre rendez-vous</h1>
+		</div>
+		<form method="post" action="#">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8 center">
+					<input type="text" name="firstName" placeholder="Prénom" />
+					<input type="text" name="lastName" placeholder="Nom" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="center col-md-offset-2 col-md-8">
+					<input type="tel" name="phoneNumber" placeholder="Numéro de téléphone" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="center col-md-offset-2 col-md-8">
+					<input type="email" name="email" placeholder="Email" />
+				</div>
+			</div>
+			<div class="row">
+				<label for="clientSession">Avez-vous déjà eu une séance d'hypnothérapie</label>
+				<select name="firstSession" id="clientSession">
+					<option value="yes">Oui</option>
+					<option value="no" selected="selected">Non</option>
+				</select>
+			</div>
+			<div class="row">
+				<textarea name="comment" rows="3" cols="80" placeholder="Votre demande"></textarea>
+			</div>
+			<button type="submit">Envoyer</button>
+		</form>
+	</section>
+	<footer>
+		<div class="col-md-offset-2 col-md-4">
+			<h2>ÉVEIL & VOUS</h2>
+			<p>Cabinet d'hypnothérapie dirigé par</br>Christelle Quéraux</p>
+			<p>Rendez-vous sur Cholet</p>
+		</div>
+		<div class="col-md-4">
+			<h2>CONTACT</h2>
+			<p>23 rue du Larzac</br>49300 Cholet</p>
+			<p>06.98.20.28.23</p>
+			<p>christelle.queraux@gmail.com</p>
+		</div>
+		<div class="clearBoth"></div>
+	</footer>
 	<script src="scripts/jquery-2.2.4.min.js"></script>
 	<script src="scripts/main.js"></script>
 </body>
