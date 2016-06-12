@@ -109,17 +109,19 @@ header #topBar li:hover a {
 	border-bottom: 1px solid #d06faa;
 }
 
+
 /********************
 
 footer
 
 ********************/
 
-footer{
+footer {
 	padding: 40px 0;
 	color: #fff;
 	background-color: #585858;
 }
+
 
 /********************
 
@@ -255,6 +257,15 @@ a#arrow {
 
 ********************/
 
+#forWhat h1 {
+	padding-bottom: 5px;
+	margin-bottom: 60px;
+}
+
+#forWhat {
+	background-color: #e0a9ce;
+}
+
 
 /********************
 
@@ -262,12 +273,16 @@ a#arrow {
 
 ********************/
 
+#contact {}
+
 #infosContact input,
-#contactForm textarea {
+#infosContact textarea {
 	font-size: 16px;
 	background-color: #e5e5e5;
 	border-radius: 5px;
 	padding: 5px 10px;
+	margin-bottom: 15px;
+box-shadow: 10px;
 }
 
 #infosContact input[type=text] {
@@ -279,7 +294,8 @@ a#arrow {
 }
 
 #infosContact input[type=email],
-#infosContact input[type=tel], #infosContact textarea {
+#infosContact input[type=tel],
+#infosContact textarea {
 	width: 42vw;
 }
 

@@ -54,14 +54,19 @@
 		</div>
 	</section>
 	<section id="forWhat">
-		<!--	To do  -->
+		<div class="row">
+			<h1 class="col-md-offset-2 col-md-5">L'hypnothérapie, pour quoi ?</h1>
+		</div>
 	</section>
 	<section id="infosContact">
+		<div class="row">
+			<h1 class="col-md-offset-2 col-md-4">Mes disponibilités</h1>
+		</div>
 		<div class="row center">
 			<iframe class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-12 " src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=500&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=jl1urnusetsclf6l07mq36204s%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=Europe%2FParis" style="border-width:0" width="900" height="500" frameborder="0" scrolling="no"></iframe>
 		</div>
-		<div class="row center" id="contactForm">
-			<h1 class="col-md-offset-2 col-md-4">Prendre rendez-vous</h1>
+		<div class="row" id="contactForm">
+			<h1 class="col-md-offset-2 col-md-4">Me contacter</h1>
 		</div>
 		<form method="post" action="#">
 			<div class="row">
@@ -81,16 +86,18 @@
 				</div>
 			</div>
 			<div class="row">
-				<label for="clientSession">Avez-vous déjà eu une séance d'hypnothérapie</label>
-				<select name="firstSession" id="clientSession">
-					<option value="yes">Oui</option>
-					<option value="no" selected="selected">Non</option>
-				</select>
+				<div class="col-md-offset-3 col-md-7">
+					<label for="clientSession">Avez-vous déjà eu une séance d'hypnothérapie</label>
+					<select name="firstSession" id="clientSession">
+						<option value="yes">Oui</option>
+						<option value="no" selected="selected">Non</option>
+					</select>
+				</div>
 			</div>
 			<div class="row">
-				<textarea name="comment" rows="3" cols="80" placeholder="Votre demande"></textarea>
-			</div>
+				<textarea class="center col-md-offset-2 col-md-8" name="comment" rows="3" cols="80" placeholder="Souhaitez-vous obtenir un renseignement en particulier ? Ou souhaitez-vous tout simplement prendre rendez-vous ?"></textarea>
 			<button type="submit">Envoyer</button>
+			</div>
 		</form>
 	</section>
 	<footer>
