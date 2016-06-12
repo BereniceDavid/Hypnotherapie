@@ -60,6 +60,7 @@ input:focus {
 /********************
 
 Header
+topBar
 
 ********************/
 
@@ -269,7 +270,8 @@ a#arrow {
 
 /********************
 
-#infosContact
+#infosContact (google calendar)
+#contactForm (formulaire de contact)
 
 ********************/
 
@@ -282,6 +284,11 @@ a#arrow {
 	margin-bottom: 15px;
 	box-shadow: 10px;
 	border: none;
+}
+
+#infosContact h1 {
+	margin-top: 20px;
+	padding-top: 90px;
 }
 
 
@@ -301,6 +308,9 @@ a#arrow {
 	width: 42vw;
 }
 */
+
+
+/** placeholder color (input + textarea) **/
 
 ::-webkit-input-placeholder {
 	/* Chrome/Opera/Safari */
@@ -323,21 +333,34 @@ a#arrow {
 	color: #737373;
 }
 
-input:-moz-placeholder, textarea:-moz-placeholder {
-    color: #737373;
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #737373;
 }
- 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #737373;
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #737373;
 }
- 
-input.placeholder, textarea.placeholder {
-    color: #555;
+
+input.placeholder,
+textarea.placeholder {
+	color: #555;
 }
+
 
 /********************
 
 /INDEX.PHP
+
+HYPNO.HTML
+
+********************/
+
+
+/********************
+
+/HYPNO.HTML
 
 ********************/
 

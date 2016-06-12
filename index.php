@@ -12,11 +12,12 @@
 	</head>
 
 	<body>
+
 		<header>
 			<nav id="topBar">
 				<div class="row">
 					<ul class="center">
-						<li class="col-md-offset-1 col-md-2 col-sm-2 col-xs-12"><a href="#" title="En savoir plus sur l'hypnothérapie">L'hypnothérapie</a></li>
+						<li class="col-md-offset-1 col-md-2 col-sm-2 col-xs-12"><a href="hypno.html" title="En savoir plus sur l'hypnothérapie">L'hypnothérapie</a></li>
 						<li class="col-md-2 col-sm-2 col-xs-12"><a href="#" title="Qui suis-je ?">Qui suis-je ?</a></li>
 						<li class="col-md-offset-2 col-md-2 col-sm-2 col-xs-12"><a href="#" title="Contact">Contact</a></li>
 						<li class="col-md-2 col-sm-2"><a href="#" title="Témoignages">Témoignages</a></li>
@@ -25,6 +26,8 @@
 				</div>
 			</nav>
 		</header>
+
+		<!--		welcomeSection  -->
 		<section id="welcomeSection">
 			<img src="images/background-image.png" alt="backgroundImage" />
 			<span class="infos col-md-12 col-sm-12 col-xs-12">
@@ -38,6 +41,8 @@
 					<a id="arrow" class="glyphicon glyphicon-menu-down" title="Voir plus détails" href="#whoAmI"></a>
 				</span>
 		</section>
+
+		<!--		Qui suis-je ?  -->
 		<section id="whoAmI">
 			<div class="row">
 				<h1 class="col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4 col-xs-offset-1 col-xs-10">Qui suis-je ?</h1>
@@ -55,11 +60,15 @@
 				</div>
 			</div>
 		</section>
+
+		<!--		L'hypnothérapie pour quoi ?  -->
 		<section id="forWhat">
 			<div class="row">
 				<h1 class="col-md-offset-2 col-md-5 col-sm-offset-2 col-sm-5 col-xs-offset-1 col-xs-10">L'hypnothérapie, pour quoi ?</h1>
 			</div>
 		</section>
+
+		<!--		Google agenda + formulaire de contact  -->
 		<section id="infosContact">
 			<div class="row">
 				<h1 class="col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4 col-xs-offset-1 col-xs-10">Mes disponibilités</h1>
@@ -70,6 +79,8 @@
 			<div class="row" id="contactForm">
 				<h1 class="col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4 col-xs-offset-1 col-xs-10">Me contacter</h1>
 			</div>
+
+
 			<form method="post" action="contact.php">
 
 				<?php  if(array_key_exists('errors', $_SESSION)): ?>
@@ -121,6 +132,7 @@
 								</div>
 			</form>
 		</section>
+
 		<footer>
 			<div class="col-md-offset-3 col-md-3">
 				<h2>ÉVEIL & VOUS</h2>
@@ -137,6 +149,7 @@
 			</div>
 			<div class="clearBoth"></div>
 		</footer>
+
 		<script src="scripts/jquery-2.2.4.min.js"></script>
 		<script src="scripts/main.js"></script>
 	</body>
