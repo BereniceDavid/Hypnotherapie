@@ -1,0 +1,186 @@
+/********************
+
+General
+
+********************/
+
+body {
+	font-family: 'Josefin Sans', 'Arial', sans-serif;
+	margin: none;
+	padding: none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+.thin {
+	font-weight: 100;
+}
+
+.semiBold {
+	font-weight: 600;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+
+/********************
+
+Header
+
+********************/
+
+nav {
+	font-size: 24px;
+	width: 100vw;
+	position: fixed;
+	z-index: 100;
+	background-color: #FFFFFF;
+	padding: 20px 0px;
+}
+
+header #topBar li {
+	list-style: none;
+}
+
+header #topBar li a {
+	font-weight: 100;
+	color: #000000;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px;
+}
+
+#topBar img#logoHeader {
+	width: 80px;
+	height: auto;
+}
+
+header #topBar ul {
+	position: relative;
+}
+
+#logoLink {
+	position: absolute;
+	z-index: 50;
+	top: 6.5vh;
+	left: 50vw;
+	margin-left: -40px;
+}
+
+.activePage {
+	border-bottom: solid 1px #d06faa;
+}
+
+header #topBar li:hover a {
+	color: lightslategrey;
+}
+
+
+/********************
+
+INDEX.HTML
+
+#welcomeSection
+
+********************/
+
+#welcomeSection {
+	overflow-x: hidden;
+	position: relative;
+	z-index: 10;
+	color: #FFFFFF;
+}
+
+#welcomeSection img {
+	height: 100vh;
+	width: 100vw;
+}
+
+#welcomeSection .infos {
+	display: none;
+	top: 24vh;
+	text-align: center;
+	position: absolute;
+	z-index: 12;
+}
+
+#welcomeSection h1 {
+	font-size: 50px;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+	margin-bottom: 50px;
+}
+
+#welcomeSection p,
+#welcomeSection #arrow {
+	margin-bottom: 5px;
+	font-size: 40px;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#welcomeSection #phoneNumber {
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+#welcomeSection button {
+	margin-top: 20px;
+	font-size: 25px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #FFFFFF;
+	transition: all 0.4s ease;
+}
+
+#welcomeSection button:hover {
+	color: rgba(0, 0, 0, 0.5);
+	background-color: #FFF;
+}
+
+a#arrow {
+	margin-top: 42px;
+	text-decoration: none;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+
+/********************
+
+#whoAmI
+
+********************/
+
+#whoAmI {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#whoAmI h1 {
+	display: inline-block;
+	padding-bottom: 4px;
+	border-bottom: solid 1px #d06faa;
+}
+
+
+/********************
+
+/INDEX.HTML
+
+********************/
