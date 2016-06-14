@@ -25,9 +25,9 @@ $(document).ready(function () {
 
 	/****  SCROLL to contact form  ****/
 
-		$('#welcomeSection button, #whoAmI button').on("click", function () {
+	$('#welcomeSection button, #whoAmI button').on("click", function () {
 		$('html, body').animate({
-			scrollTop: $("#contactForm").offset().top
+			scrollTop: $(".contactForm").offset().top
 		}, 2000);
 		return false;
 	});
