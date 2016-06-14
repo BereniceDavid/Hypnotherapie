@@ -267,11 +267,18 @@ a#arrow {
 	background-color: #e0a9ce;
 }
 
+#forWhat div img {
+	width: 20vw;
+	height: auto;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
 
 /********************
 
-#infosContact (google calendar)
-#contactForm (formulaire de contact)
+#infosContact (section)
+#contactForm (formulaire de contact h1)
 
 ********************/
 
@@ -371,6 +378,7 @@ MEDIA QUERIES
 
 ********************/
 
+
 /**  Téléphone  **/
 
 @media screen and (max-width: 767px) {
@@ -378,7 +386,7 @@ MEDIA QUERIES
 		margin-top: 30px;
 		text-align: center;
 	}
-	#whoAmI #description p{
+	#whoAmI #description p {
 		text-align: justify;
 	}
 	#whoAmI #description button {
@@ -386,12 +394,12 @@ MEDIA QUERIES
 		right: inherit;
 		bottom: inherit;
 		margin-top: 20px;
-		
 	}
 	#whoAmI {
 		padding-bottom: 180px;
 	}
 }
+
 
 /**  Tablette  **/
 

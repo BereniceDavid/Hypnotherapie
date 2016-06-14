@@ -66,12 +66,24 @@
 			<div class="row">
 				<h1 class="col-md-offset-2 col-md-5 col-sm-offset-2 col-sm-5 col-xs-offset-1 col-xs-10">L'hypnothérapie, pour quoi ?</h1>
 			</div>
+			<div class="row">
+				<img src="images/grey.jpg" alt="Anxiété" class="col-md-offset-2 col-md-2" />
+				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" class="col-md-2" />
+				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" class="col-md-2" />
+				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" class="col-md-2" />
+			</div>
+			<div class="row">
+				<img src="images/grey.jpg" alt="Anxiété" class="col-md-offset-2 col-md-2" />
+				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" class="col-md-2" />
+				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" class="col-md-2" />
+				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" class="col-md-2" />
+			</div>
 		</section>
 
 		<!--		Google agenda + formulaire de contact  -->
 		<section id="infosContact">
 			<div class="row">
-				<h1 class="col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4 col-xs-offset-1 col-xs-10">Mes disponibilités</h1>
+				<h1 class="col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-5 col-xs-offset-1 col-xs-10">Mes disponibilités</h1>
 			</div>
 			<div class="row center">
 				<iframe class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-12 " src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=500&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=jl1urnusetsclf6l07mq36204s%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=Europe%2FParis" style="border-width:0" width="900" height="500" frameborder="0" scrolling="no"></iframe>
