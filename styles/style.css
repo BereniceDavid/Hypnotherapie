@@ -235,7 +235,7 @@ a#arrow {
 
 #whoAmI button {
 	position: absolute;
-	bottom: 0;
+	bottom: -35px;
 	right: 15px;
 	color: #FFF;
 	font-size: 16px;
@@ -371,20 +371,34 @@ MEDIA QUERIES
 
 ********************/
 
+/**  Téléphone  **/
+
 @media screen and (max-width: 767px) {
 	#whoAmI #description {
 		margin-top: 30px;
+		text-align: center;
+	}
+	#whoAmI #description p{
+		text-align: justify;
 	}
 	#whoAmI #description button {
-		bottom: -40px;
+		position: inherit;
+		right: inherit;
+		bottom: inherit;
+		margin-top: 20px;
+		
 	}
 	#whoAmI {
-		padding-bottom: 140px;
+		padding-bottom: 180px;
 	}
 }
 
+/**  Tablette  **/
+
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
+
+/*
 @media screen and (min-width: 992px) and (max-width: 1199px) {}
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {}*/
