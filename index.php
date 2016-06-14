@@ -67,16 +67,20 @@
 				<h1 class="col-md-offset-2 col-md-5 col-sm-offset-2 col-sm-5 col-xs-offset-1 col-xs-10">L'hypnothérapie, pour quoi ?</h1>
 			</div>
 			<div class="row">
-				<img src="images/grey.jpg" alt="Anxiété" class="col-md-offset-2 col-md-2" />
-				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" class="col-md-2" />
-				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" class="col-md-2" />
-				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" class="col-md-2" />
+				<div class="col-md-offset-2 col-md-8">
+					<img src="images/grey.jpg" alt="Anxiété" />
+					<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" />
+					<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" />
+					<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" />
+				</div>
 			</div>
-			<div class="row">
-				<img src="images/grey.jpg" alt="Anxiété" class="col-md-offset-2 col-md-2" />
-				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" class="col-md-2" />
-				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" class="col-md-2" />
-				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" class="col-md-2" />
+			div class="row">
+			<div class="col-md-offset-2 col-md-8">
+				<img src="images/grey.jpg" alt="Anxiété" />
+				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" />
+				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" />
+				<img src="images/grey.jpg" alt="Troubles du comportement alimentaire" />
+			</div>
 			</div>
 		</section>
 
