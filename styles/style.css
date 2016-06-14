@@ -205,13 +205,13 @@ a#arrow {
 
 #whoAmI,
 #forWhat,
-#infosContact {
+.infosContact {
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
 
 #whoAmI h1,
-#infosContact h1 {
+.infosContact h1 {
 	padding-bottom: 5px;
 	margin-bottom: 60px;
 	border-bottom: solid 1px #e0a9ce;
@@ -270,13 +270,13 @@ a#arrow {
 
 /********************
 
-#infosContact (google calendar)
-#contactForm (formulaire de contact)
+.infosContact (google calendar)
+.contactForm (formulaire de contact)
 
 ********************/
 
-#infosContact input,
-#infosContact textarea {
+.infosContact input,
+.infosContact textarea {
 	font-size: 16px;
 	background-color: #eeeeee;
 	border-radius: 5px;
@@ -286,28 +286,10 @@ a#arrow {
 	border: none;
 }
 
-#infosContact h1 {
+.infosContact h1 {
 	margin-top: 20px;
 	padding-top: 90px;
 }
-
-
-/*
-
-#infosContact input[type=text] {
-	width: 20vw;
-}
-
-#infosContact input[name=firstName] {
-	margin-right: 2vw;
-}
-
-#infosContact input[type=email],
-#infosContact input[type=tel],
-#infosContact textarea {
-	width: 42vw;
-}
-*/
 
 
 /** placeholder color (input + textarea) **/
@@ -353,9 +335,53 @@ textarea.placeholder {
 
 /INDEX.PHP
 
-HYPNO.HTML
+contact.HTML
 
 ********************/
+
+#googlemap iframe {
+	width: 100vw;
+	height: 50vh;
+}
+
+#googlemap {
+	margin-top: 85px;
+}
+
+#contactMe {
+	padding-top: 50px;
+}
+
+#contactMe h1 {
+	padding-top: 0px;
+}
+
+.infosContact input[name=firstName],
+.infosContact input[name=lastName],
+.infosContact input[name=phoneNumber] {
+	width: 16vw;
+	height: 5vh;
+	margin-right: 0.5vw;
+}
+
+.infosContact input[type=email] {
+	width: 25vw;
+	height: 5vh;
+	margin-right: 5.4vw;
+}
+
+
+/*
+.infosContact input[name=firstName] {
+	margin-right: 2vw;
+}
+
+.infosContact input[type=email],
+.infosContact input[type=tel],
+.infosContact textarea {
+	width: 42vw;
+}
+*/
 
 
 /********************
@@ -371,6 +397,7 @@ MEDIA QUERIES
 
 ********************/
 
+
 /**  Téléphone  **/
 
 @media screen and (max-width: 767px) {
@@ -378,7 +405,7 @@ MEDIA QUERIES
 		margin-top: 30px;
 		text-align: center;
 	}
-	#whoAmI #description p{
+	#whoAmI #description p {
 		text-align: justify;
 	}
 	#whoAmI #description button {
@@ -386,7 +413,6 @@ MEDIA QUERIES
 		right: inherit;
 		bottom: inherit;
 		margin-top: 20px;
-		
 	}
 	#whoAmI {
 		padding-bottom: 180px;
