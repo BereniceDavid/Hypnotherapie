@@ -18,11 +18,13 @@
 			<nav id="topBar">
 				<div class="row">
 					<ul class="center">
-						<li class="col-md-offset-1 col-md-2 col-sm-2 col-xs-12"><a href="hypno.html" title="En savoir plus sur l'hypnothérapie">L'hypnothérapie</a></li>
-						<li class="col-md-2 col-sm-2 col-xs-12"><a href="#" title="Qui suis-je ?">Qui suis-je ?</a></li>
-						<li class="col-md-offset-2 col-md-2 col-sm-2 col-xs-12"><a href="contact.html" title="Contact">Contact</a></li>
-						<li class="col-md-2 col-sm-2"><a href="temoignages.html" title="Témoignages">Témoignages</a></li>
+						<li class="col-md-offset-1 col-md-2 col-sm-offset-1 col-sm-2 col-xs-12"><a href="hypno.html" title="En savoir plus sur l'hypnothérapie">L'hypnothérapie</a></li>
+						<li class="col-md-2 col-sm-3 col-xs-12"><a href="#" title="Qui suis-je ?">Qui suis-je ?</a></li>
+						<li class="col-md-offset-2 col-md-2 col-sm-offset-1 col-sm-1 col-xs-12"><a href="contact.html" title="Contact">Contact</a></li>
+						<li class="col-md-offset-0 col-md-2 col-sm-offset-1 col-sm-2"><a href="temoignages.html" title="Témoignages">Témoignages</a></li>
 					</ul>
+					<i class="fa fa-bars" aria-hidden="true"></i>
+					<i class="fa fa-times" aria-hidden="true"></i>
 					<a href="index.php" title="Aller à l'accueil" id="logoLink"><img id="logoHeader" src="images/logo_hypno-01.png" alt="logo Éveil & Vous" /></a>
 				</div>
 			</nav>
