@@ -27,7 +27,7 @@ $(document).ready(function () {
 
 	$('#welcomeSection button, #whoAmI button').on("click", function () {
 		$('html, body').animate({
-			scrollTop: $(".contactForm").offset().top
+			scrollTop: $("#indexForm").offset().top
 		}, 2000);
 		return false;
 	});
