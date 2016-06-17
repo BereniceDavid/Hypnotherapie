@@ -97,12 +97,16 @@ header #topBar ul {
 	margin: auto;
 }
 
+#topBar {
+	position: relative;
+}
+
 #logoLink {
 	position: absolute;
 	z-index: 50;
-	top: 6.5vh;
-	left: 49.5vw;
-	margin-left: -40px;
+	bottom: -60px;
+	margin-left: -47px;
+	left: 50%;
 }
 
 header #topBar li:hover a {
@@ -225,7 +229,7 @@ a#arrow {
 #whoAmI img {
 	border-radius: 5px;
 	height: 180px;
-	width: 140px;
+	width: auto;
 }
 
 #description {
@@ -267,23 +271,51 @@ a#arrow {
 	background-color: #e0a9ce;
 }
 
-#forWhat div img {
-	width: 20vw;
-	height: auto;
-	margin-bottom: 20px;
-	border-radius: 5px;
+.relative {
+	position: relative;
+	padding-bottom: 180px;
 }
+
+#forWhat img {
+	width: 150px;
+	height: auto;
+	border-radius: 80px;
+}
+
+#forWhat span.hoverImg {
+	position: absolute;
+	top: 170px;
+	left: 0px;
+}
+
+#forWhat h3 {
+	font-size: 30px;
+	margin: 0;
+}
+
+#forWhat p {
+	font-size: 16px;
+	margin: 0;
+}
+
+
+/*
+
+#forWhat div img:nth-of-type(1),
+#forWhat div img:nth-of-type(2) {
+	margin-right: 40px;
+}
+
+#forWhat div img:nth-of-type(4) {
+	margin-left: 40px;
+}
+*/
 
 
 /********************
 
-<<<<<<< HEAD
 #infosContact (section)
 #contactForm (formulaire de contact h1)
-=======
-.infosContact (google calendar)
-.contactForm (formulaire de contact)
->>>>>>> master
 
 ********************/
 
@@ -429,12 +461,23 @@ MEDIA QUERIES
 	#whoAmI {
 		padding-bottom: 180px;
 	}
+	/**  #forWhat  **/
+	.relative {
+		text-align: center;
+		position: relative;
+		padding-bottom: 150px;
+	}
 }
 
 
 /**  Tablette  **/
 
-@media screen and (min-width: 768px) and (max-width: 991px) {}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	/**  #forWhat  **/
+	.relative {
+		text-align: center;
+	}
+}
 
 
 /*
