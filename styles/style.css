@@ -114,6 +114,17 @@ header #topBar li:hover a {
 	border-bottom: 1px solid #d06faa;
 }
 
+i.fa-bars,
+i.fa-times {
+	display: none;
+	top: -15px;
+	right: 30px;
+	position: absolute;
+	z-index: 72;
+	font-size: 26px;
+	color: #666666;
+}
+
 
 /********************
 
@@ -445,6 +456,26 @@ MEDIA QUERIES
 /**  Téléphone  **/
 
 @media screen and (max-width: 767px) {
+	/**  header / #topBar  **/
+	/*	top bar fermée*/
+	#topBar ul {
+		display: none;
+	}
+	#topBar img#logoHeader {
+		width: 65px;
+	}
+	#logoLink {
+		display: block;
+		bottom: -58px;
+		margin-left: -40px;
+	}
+	header {
+		padding: 25px 0;
+	}
+	i.fa-bars {
+		display: inline-block;
+	}
+	/**  #whoAmI  **/
 	#whoAmI #description {
 		margin-top: 30px;
 		text-align: center;
@@ -473,6 +504,10 @@ MEDIA QUERIES
 /**  Tablette  **/
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+	/**  header / #topBar  **/
+	header {
+		font-size: 20px;
+	}
 	/**  #forWhat  **/
 	.relative {
 		text-align: center;
