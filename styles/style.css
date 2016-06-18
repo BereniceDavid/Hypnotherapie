@@ -519,3 +519,37 @@ MEDIA QUERIES
 @media screen and (min-width: 992px) and (max-width: 1199px) {}
 
 @media screen and (min-width: 1200px) {}*/
+
+/********************
+
+/INDEX.PHP
+
+quisuisje.HTML
+
+********************/
+
+.portrait {
+	margin-top: 85px;
+	padding: 120px 0;
+	background-color: #F8F8F8;
+}
+
+.portrait img {
+	margin-right: 10px;
+	border-radius: 200px;
+}
+
+.summary {
+	margin-top: 55px;
+}
+
+.summary h2 {
+	padding: 15px 0;
+}
+
+.video {
+	background-color: #000;
+}
+.video h2 {
+	color: #FFF;
+}
