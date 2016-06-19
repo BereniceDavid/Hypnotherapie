@@ -285,7 +285,7 @@ a#arrow {
 .relative {
 	width: 225px;
 	position: relative;
-	padding-bottom: 180px;
+	margin-bottom: 300px;
 }
 
 #forWhat img {
@@ -296,19 +296,27 @@ a#arrow {
 
 #forWhat span.hoverImg {
 	position: absolute;
-	top: 50px;
+	top: 0px;
 	left: 2px;
-	width: 221px;
+	width: 225px;
+	background-color: #FFF;
+	height: 225px;
+	border-radius: 500px;
 }
 
 #forWhat h3 {
 	font-size: 30px;
 	margin: 0;
+	margin-top: 60px;
 }
 
 #forWhat p {
 	font-size: 16px;
 	margin: 0;
+}
+
+#precision{
+	font-size: 20px;
 }
 
 
@@ -509,6 +517,7 @@ MEDIA QUERIES
 
 @media screen and (min-width: 1200px) {}*/
 
+
 /********************
 
 /INDEX.PHP
@@ -539,6 +548,7 @@ quisuisje.HTML
 .video {
 	background-color: #000;
 }
+
 .video h2 {
 	color: #FFF;
 }
