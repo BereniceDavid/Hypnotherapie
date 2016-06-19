@@ -528,7 +528,8 @@ quisuisje.HTML
 
 .portrait {
 	margin-top: 85px;
-	padding: 120px 0;
+	padding-top: 120px;
+	padding-bottom: 30px;
 	background-color: #F8F8F8;
 }
 
@@ -543,12 +544,69 @@ quisuisje.HTML
 
 .summary h2 {
 	padding: 15px 0;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+	padding: 60px 0;
+}
+
+.text p {
+	width: auto;
+	height: auto;
+	font-size: 25px;
+}
+
+.icon {
+	width: 225px;
+	height: 225px;
+	border-radius: 900px;
+	position: relative;
+	margin-top: 60px;
+	background: #C0C0C0;
+}
+
+.iconBorder {
+	border: 2px solid #E0A9CE;
+	width: 225px;
+	height: 225px;
+	border-radius: 900px;
+	position: relative;
+	margin-top: 60px;
+}
+
+.icon span {
+	position: absolute;
+	width: 225px;
+	height: 225px;
+	text-align: center;
+	top: 0;
+	left: 0;
+	padding-top: 90px;
+	font-size: 30px;
+	color: #FFF;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.iconBorder span {
+	position: absolute;
+	width: 225px;
+	height: 225px;
+	text-align: center;
+	top: 0;
+	left: 0;
+	padding-top: 90px;
+	font-size: 30px;
+	color: #707070;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .video {
-	background-color: #000;
+	background-color: #FFF;
+	padding: 20px 0;
 }
 
-.video h2 {
-	color: #FFF;
+.video span {
+	color: #000;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
