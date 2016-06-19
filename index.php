@@ -63,14 +63,18 @@
 				</div>
 			</div>
 		</section>
+		<div class="device-xs visible-xs"></div>
+		<div class="device-sm visible-sm"></div>
+		<div class="device-md visible-md"></div>
+		<div class="device-lg visible-lg"></div>
 
 		<!--		L'hypnothérapie pour quoi ?  -->
 		<section id="forWhat">
 			<div class="row">
-				<h1 class="col-md-offset-2 col-md-5 col-sm-offset-2 col-sm-5 col-xs-offset-1 col-xs-10">L'hypnothérapie, pour quoi ?</h1>
+				<h1 class="col-md-offset-2 col-md-6 col-sm-offset-2 col-sm-5 col-xs-offset-1 col-xs-10">L'hypnothérapie, pour quoi ?</h1>
 			</div>
 			<div class="row">
-				<div class="col-md-offset-2 col-md-2 col-sm-offset-1 col-sm-2 col-xs-offset-2 col-xs-8">
+				<div class="col-md-offset-2 col-md-2 col-sm-offset-2 col-sm-3 col-xs-offset-2 col-xs-8">
 					<div class="relative center card">
 						<div class="front">
 							<img src="images/stress.jpg" alt="hey" />
@@ -83,7 +87,7 @@
 					</span>
 						</div>
 					</div>
-					<div class="col-md-offset-1 col-md-2 col-sm-offset-2 col-sm-2 col-xs-offset-2 col-xs-8">
+					<div class="col-md-offset-1 col-md-2 col-sm-offset-2 col-sm-3 col-xs-offset-2 col-xs-8">
 						<div class="relative center card">
 							<div class="front">
 								<img src="images/addiction.jpg" alt="hey" />
@@ -96,7 +100,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-offset-1 col-md-2 col-sm-offset-2 col-sm-2 col-xs-offset-2 col-xs-8">
+					<div class="col-md-offset-1 col-md-2 col-sm-offset-2 col-sm-3 col-xs-offset-2 col-xs-8">
 						<div class="relative center card">
 							<div class="front">
 								<img src="images/alimentation.jpg" alt="hey" />
@@ -109,9 +113,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-offset-2 col-md-2 col-sm-offset-1 col-sm-2 col-xs-offset-2 col-xs-8">
+					<div class="col-md-offset-2 col-md-2 col-sm-offset-2 col-sm-3 col-xs-offset-2 col-xs-8">
 						<div class="relative center card">
 							<div class="front">
 								<img src="images/skin.JPG" alt="hey" />
@@ -124,7 +126,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-offset-1 col-md-2 col-sm-offset-2 col-sm-2 col-xs-offset-2 col-xs-8">
+					<div class="col-md-offset-1 col-md-2 col-sm-offset-2 col-sm-3 col-xs-offset-2 col-xs-8">
 						<div class="relative center card">
 							<div class="front">
 								<img src="images/confidence.jpg" alt="hey" />
@@ -137,7 +139,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-offset-1 col-md-2 col-sm-offset-2 col-sm-2 col-xs-offset-2 col-xs-8">
+					<div class="col-md-offset-1 col-md-2 col-sm-offset-2 col-sm-3 col-xs-offset-2 col-xs-8">
 						<div class="relative center card">
 							<div class="front">
 								<img src="images/mourning.jpg" alt="hey" />
@@ -152,7 +154,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-offset-2 col-md-6">
+					<div class="col-md-offset-2 col-md-6 col-sm-offset-2 col-sm-6 col-xs-offset-2 col-xs-6">
 						<span id="precision">L'hypnothérapie est une médecine qui peut soigner tous ces problèmes et bien plus encore.</span>
 					</div>
 				</div>
