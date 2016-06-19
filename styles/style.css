@@ -491,9 +491,9 @@ MEDIA QUERIES
 	}
 	/**  #forWhat  **/
 	.relative {
-		text-align: center;
 		position: relative;
-		padding-bottom: 150px;
+		margin-bottom: 280px;
+		text-align: center;
 	}
 }
 
