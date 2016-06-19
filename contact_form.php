@@ -1,6 +1,6 @@
 <?php
 
-//formulaire du index.php
+//formulaire du contact.php
 
 $errors =[];
 $first = '';
@@ -54,7 +54,7 @@ session_start();
 if(!empty($errors)){
 	$_SESSION['errors'] = $errors;
 	$_SESSION['inputs'] = $_POST ;
-	header('Location: index.php#contactMe');
+	header('Location: contact.html#contactMe');
 } else { 
 	$_SESSION['success'] = 1;
 	$headers = 'FROM: ' . $_POST['email'];
@@ -78,7 +78,7 @@ if(!empty($errors)){
 	mail('berenice.david@hotmail.fr', 'Formulaire de contact : Éveil & Vous', $message, $headers);
 	
 	//Lieu de retour après submit du formulaire
-	header('Location: index.php#contactMe');	
+	header('Location: contact.html#contactMe');	
 }
 
 ?>
