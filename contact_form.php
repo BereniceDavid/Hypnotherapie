@@ -31,6 +31,23 @@ if(!array_key_exists('phoneNumber', $_POST) || $_POST['phoneNumber'] == ''){
 	$errors['phoneNumber'] = "Vous n'avez pas renseigné votre numéro de téléphone";
 }
 
+//Adresse
+if(!array_key_exists('adress', $_POST) || $_POST['adress'] == ''){
+	$errors['adress'] = "Vous n'avez pas renseigné votre adresse";
+}
+
+//Complément d'adresse, pas obligatoire donc pas de vérification
+
+//Code postal
+if(!array_key_exists('postalCode', $_POST) || $_POST['postalCode'] == ''){
+	$errors['postalCode'] = "Vous n'avez pas renseigné votre code postal";
+}
+
+//Ville
+if(!array_key_exists('town', $_POST) || $_POST['town'] == ''){
+	$errors['town'] = "Vous n'avez pas renseigné votre ville";
+}
+
 //email
 if(!array_key_exists('email', $_POST) || $_POST['email'] == '' || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
 	$errors['email'] = "Vous n'avez pas renseigné un email valide";
@@ -67,6 +84,8 @@ if(!empty($errors)){
 	$message .= "Vous avez une demande de contact provenant du site Éveil & Vous.";
 	$message .= "<strong>Prénom</strong></br>".$_POST['firstName']."</br></br>";
 	$message .= "<strong>Nom</strong></br>".$_POST['lastName']."</br></br>";
+	$message .= "<strong>Adresse</strong></br>".$_POST['adress']." ".$_POST['complementAdress']."</br></br>";
+	$message .= "<strong>Ville</strong></br>".$_POST['postalCode']." ".$_POST['town']."</br></br>";
 	$message .= "<strong>Email</strong></br>".$_POST['email']."</br></br>";
 	$message .= "<strong>Téléphone</strong></br>".$_POST['phoneNumber']."</br></br>";
 	$message .= "<strong>Le client a t'il déjà pratiqué une séance d'hypnothérapie</strong></br>".$first."</br></br>";
