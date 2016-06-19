@@ -78,7 +78,7 @@
 						<div class="back">
 							<span class="hoverImg">
 						<h3 class="semiBold">L'anxiété</h3>
-						<p>Mais aussi le stress, les angoisses, la dépression, les phobies, les traumatismes et insomnies.</p>
+								<p>Mais aussi le stress, les angoisses,</br>la dépression, les phobies, les traumatismes et insomnies.</p>
 						</div>
 					</span>
 						</div>
@@ -103,7 +103,7 @@
 							</div>
 							<div class="back">
 								<span class="hoverImg">
-						<h3 class="semiBold">Les troubles du comportement alimentaire</h3>
+						<h3 class="semiBold">Les troubles  alimentaires</h3>
 						<p>Anorexie, boulimie, obésité.</p>
 					</span>
 							</div>
@@ -118,9 +118,9 @@
 							</div>
 							<div class="back">
 								<span class="hoverImg">
-						<h3 class="semiBold">Les maladies de peau</h3>
-						<p>Eczéma, psoriasis, acné.</p>
-					</span>
+									<h3 class="semiBold">Les maladies</br>de peau</h3>
+									<p>Eczéma, psoriasis, acné.</p>
+								</span>
 							</div>
 						</div>
 					</div>
@@ -131,9 +131,9 @@
 							</div>
 							<div class="back">
 								<span class="hoverImg">
-								<h3 class="semiBold">La confiance en soi</h3>
-								<p>Développer l'estime de soi, l'affirmation de soi.</p>
-							</span>
+									<h3 class="semiBold">La confiance</br>en soi</h3>
+									<p>Développer l'estime de soi, l'affirmation de soi.</p>
+								</span>
 							</div>
 						</div>
 					</div>
@@ -144,11 +144,16 @@
 							</div>
 							<div class="back">
 								<span class="hoverImg">
-						<h3 class="semiBold">Accepter une perte</h3>
-						<p>Une séparation difficile, un deuil.</p>
-					</span>
+									<h3 class="semiBold">Accepter</br>une perte</h3>
+									<p>Une séparation difficile,</br>un deuil.</p>
+								</span>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-offset-2 col-md-6">
+					<span id="precision">L'hypnothérapie est une médecine qui peut soigner tous ces problèmes et bien plus encore.</span>
 					</div>
 				</div>
 		</section>
