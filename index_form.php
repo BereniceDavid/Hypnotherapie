@@ -60,13 +60,15 @@ if(!empty($errors)){
 	$headers = 'FROM: ' . $_POST['email'];
 
 	//Code du mail reçu avec toutes les données rentrées par l'utilisateur
-	$message = "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
+		$message = "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
 	$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
 	$message.= $passage_ligne;
 	$message = '<html><body>';
 	$message .= "Vous avez une demande de contact provenant du site Éveil & Vous.";
 	$message .= "<strong>Prénom</strong></br>".$_POST['firstName']."</br></br>";
 	$message .= "<strong>Nom</strong></br>".$_POST['lastName']."</br></br>";
+	$message .= "<strong>Adresse</strong></br>".$_POST['adress']." ".$_POST['complementAdress']."</br></br>";
+	$message .= "<strong>Ville</strong></br>".$_POST['postalCode']." ".$_POST['town']."</br></br>";
 	$message .= "<strong>Email</strong></br>".$_POST['email']."</br></br>";
 	$message .= "<strong>Téléphone</strong></br>".$_POST['phoneNumber']."</br></br>";
 	$message .= "<strong>Le client a t'il déjà pratiqué une séance d'hypnothérapie</strong></br>".$first."</br></br>";
