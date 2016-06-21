@@ -57,12 +57,13 @@ if(!empty($errors)){
 	header('Location: index.php#indexForm');
 } else { 
 	$_SESSION['success'] = 1;
-	$headers = 'FROM: ' . $_POST['email'];
+	$headers = 'FROM: '.$_POST['email'];
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
 	//Code du mail reçu avec toutes les données rentrées par l'utilisateur
-		$message = "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
-	$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
-	$message.= $passage_ligne;
+//	$message = "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
+//	$message .= "Content-Transfer-Encoding: 8bit".$passage_ligne;
+//	$message .= $passage_ligne;
 	$message = '<html><body>';
 	$message .= "Vous avez une demande de contact provenant du site Éveil & Vous.";
 	$message .= "<strong>Prénom</strong></br>".$_POST['firstName']."</br></br>";
@@ -77,7 +78,7 @@ if(!empty($errors)){
 	$message .= $passage_ligne;
 	
 //email de destination et objet du mail (formulaire de contact)
-	mail('berenice.david@hotmail.fr', 'Formulaire de contact : Éveil & Vous', $message, $headers);
+	mail('berenice.david@hetic.net', 'Formulaire de contact : Éveil & Vous', $message, $headers);
 	
 	//Lieu de retour après submit du formulaire
 	header('Location: index.php#indexForm');	

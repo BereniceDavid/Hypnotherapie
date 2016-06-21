@@ -75,16 +75,16 @@ $(document).ready(function () {
 	//	$("i.fa-bars, i.fa-times").hide();
 
 
-	$("#topBar i.fa-bars").on('click', function () {
-		$("#topBar i.fa-bars").fadeOut();
-		$("#topBar i.fa-times").fadeIn();
-		$('header #topBar ul').css({
+	$(".topBar i.fa-bars").on('click', function () {
+		$(".topBar i.fa-bars").fadeOut();
+		$(".topBar i.fa-times").fadeIn();
+		$('header .topBar ul').css({
 			'height': '100vh'
 			, 'font-size': '28px'
 			, 'margin-top': '25vh'
 			, 'display': 'inline-block'
 		});
-		$('header #topBar li').css({
+		$('header .topBar li').css({
 			"z-index": '70'
 			, 'display': 'inline-block'
 			, 'margin-bottom': '20px'
@@ -92,21 +92,21 @@ $(document).ready(function () {
 		$('html').css({
 			"overflow": "hidden"
 		});
-		$('#logoLink').css({
-			"top": "5vh"
-		});
+//		$('#logoLink').css({
+//			"top": "5vh"
+//		});
 	});
-	$("#topBar i.fa-times").on('click', function () {
-		$("#topBar i.fa-times").fadeOut();
-		$("#topBar i.fa-bars").fadeIn();
-		$('#logoLink').css({
-			'top': 'inherit'
-			, "bottom": "-58px"
-		});
-		$('#topBar ul').css({
+	$(".topBar i.fa-times").on('click', function () {
+		$(".topBar i.fa-times").fadeOut();
+		$(".topBar i.fa-bars").fadeIn();
+//		$('#logoLink').css({
+//			'top': 'inherit', 
+//		"bottom": "-58px"
+//		});
+		$('.topBar ul').css({
 			'display': 'none'
 		});
-		$('#topBar img#logoHeader').css({
+		$('.topBar img#logoHeader').css({
 			"width": '65px'
 		});
 		$('header').css({
@@ -142,7 +142,7 @@ $(document).ready(function () {
 	/****  #forWhat flip img  ****/
 
 	//	
-	//	$(".card").flip({
+	//	$(".card").flip(){
 	//		axis: 'y'
 	//		, trigger: 'hover'
 	//		, reverse: true

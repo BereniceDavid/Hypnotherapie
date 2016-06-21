@@ -15,7 +15,7 @@
 	<body>
 
 		<header>
-			<nav id="topBar">
+			<nav class="topBar">
 				<div class="row">
 					<ul class="center">
 						<li class="col-md-offset-1 col-md-2 col-sm-offset-1 col-sm-2 col-xs-12"><a href="hypno.html" title="En savoir plus sur l'hypnothérapie">L'hypnothérapie</a></li>
@@ -32,7 +32,7 @@
 
 		<!--		welcomeSection  -->
 		<section id="welcomeSection">
-			<img src="images/background-image.png" alt="backgroundImage" />
+			<img src="images/background-image.jpg" alt="backgroundImage" />
 			<span class="infos col-md-12 col-sm-12 col-xs-12">
 					<h1 class="thin">ÉVEIL & VOUS</h1>
 					<p class="semiBold">Christelle Quéraux</p>
