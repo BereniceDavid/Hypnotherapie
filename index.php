@@ -231,24 +231,30 @@
 		</section>
 
 		<footer>
-			<div class="col-md-offset-3 col-md-3">
-				<h2>ÉVEIL & VOUS</h2>
-				<p>Cabinet d'hypnothérapie dirigé par</br>Christelle Quéraux</p>
-				<p>Rendez-vous sur Cholet</p>
-			</div>
-			<div class="col-md-3">
-				<div>
-					<h2>CONTACT</h2>
-					<i class="fa fa-map-marker" aria-hidden="true"></i>
-					<p>25 Rue Saint-Bonaventure</br>49300 Cholet</p>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-4 center col-sm-12 col-xs-12">
+					<h3>ÉVEIL & VOUS</h2>
+					<p>Cabinet d'hypnothérapie dirigé par</br>Christelle Quéraux</p>
+					</br>
+					<p>Rendez-vous sur Cholet ou à domicile selon la proximité</p>
+				</div>
+				<div class="col-md-4 center col-sm-12 col-xs-12">
+					<h3>CONTACT</h2>
 					<i class="fa fa-phone" aria-hidden="true"></i>
 					<p>06.98.20.28.23</p>
+					</br>
 					<i class="fa fa-envelope" aria-hidden="true"></i>
 					<p>christelle.queraux@gmail.com</p>
-					<a href="#" title="voir les mentions légales">Mentions Légales</a>
+					</br>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					<p>25 Rue Saint-Bonaventure, 49300 Cholet</p>
+					</br>
 				</div>
 			</div>
-			<div class="clearBoth"></div>
+			<div class="row center" id="moreInfos">
+				<a class="col-md-offset-4 col-md-2 col-sm-offset-2 col-sm-4 col-xs-6" href="mentions.html" title="voir les mentions légales">Mentions Légales</a>
+				<p class="col-md-2 col-sm-4 col-xs-6">Éveil & Vous © 2016</p>
+			</div>
 		</footer>
 
 		<script src="scripts/jquery-2.2.4.min.js"></script>

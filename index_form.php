@@ -57,15 +57,19 @@ if(!empty($errors)){
 	header('Location: index.php#indexForm');
 } else { 
 	$_SESSION['success'] = 1;
-	$headers = 'FROM: '.$_POST['email'];
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	$headers = 'FROM: '.$_POST['email'].$passage_ligne;
+	$headers .= 'MIME-Version: 1.0' . "\r\n";
+  $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	$headers .= "Content-Transfer-Encoding: 8bit".$passage_ligne;
 
+//		$headers .= "Content-Transfer-Encoding: 8bit";
+//	
 	//Code du mail reçu avec toutes les données rentrées par l'utilisateur
 //	$message = "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
 //	$message .= "Content-Transfer-Encoding: 8bit".$passage_ligne;
 //	$message .= $passage_ligne;
 	$message = '<html><body>';
-	$message .= "Vous avez une demande de contact provenant du site Éveil & Vous.";
+	$message .= "Vous avez reçu une demande de contact provenant du site Éveil & Vous.</br></br>";
 	$message .= "<strong>Prénom</strong></br>".$_POST['firstName']."</br></br>";
 	$message .= "<strong>Nom</strong></br>".$_POST['lastName']."</br></br>";
 	$message .= "<strong>Adresse</strong></br>".$_POST['adress']." ".$_POST['complementAdress']."</br></br>";
@@ -76,6 +80,8 @@ if(!empty($errors)){
 	$message .= "<strong>Commentaire du client</strong></br>".$_POST['comment'];
 	$message .= '</body></html>';
 	$message .= $passage_ligne;
+	
+	$message = utf8_decode($message);
 	
 //email de destination et objet du mail (formulaire de contact)
 	mail('berenice.david@hetic.net', 'Formulaire de contact : Éveil & Vous', $message, $headers);
