@@ -1,6 +1,6 @@
 <?php
 
-//formulaire du contact.php
+//formulaire du index.php
 
 $errors =[];
 $first = '';
@@ -31,23 +31,6 @@ if(!array_key_exists('phoneNumber', $_POST) || $_POST['phoneNumber'] == ''){
 	$errors['phoneNumber'] = "Vous n'avez pas renseigné votre numéro de téléphone";
 }
 
-//Adresse
-if(!array_key_exists('adress', $_POST) || $_POST['adress'] == ''){
-	$errors['adress'] = "Vous n'avez pas renseigné votre adresse";
-}
-
-//Complément d'adresse, pas obligatoire donc pas de vérification
-
-//Code postal
-if(!array_key_exists('postalCode', $_POST) || $_POST['postalCode'] == ''){
-	$errors['postalCode'] = "Vous n'avez pas renseigné votre code postal";
-}
-
-//Ville
-if(!array_key_exists('town', $_POST) || $_POST['town'] == ''){
-	$errors['town'] = "Vous n'avez pas renseigné votre ville";
-}
-
 //email
 if(!array_key_exists('email', $_POST) || $_POST['email'] == '' || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
 	$errors['email'] = "Vous n'avez pas renseigné un email valide";
@@ -74,13 +57,12 @@ if(!empty($errors)){
 	header('Location: contact.html#contactMe');
 } else { 
 	$_SESSION['success'] = 1;
-	$headers = 'FROM: ' . $_POST['email'];
+	$headers = 'FROM: '.$_POST['email'];
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	$headers .= "Content-Transfer-Encoding: 8bit";
 
 	//Code du mail reçu avec toutes les données rentrées par l'utilisateur
-	$message = "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
-	$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
-	$message.= $passage_ligne;
-	$message .= '<html><body>';
+	$message = '<html><body>';
 	$message .= "Vous avez une demande de contact provenant du site Éveil & Vous.";
 	$message .= "<strong>Prénom</strong></br>".$_POST['firstName']."</br></br>";
 	$message .= "<strong>Nom</strong></br>".$_POST['lastName']."</br></br>";
@@ -94,7 +76,7 @@ if(!empty($errors)){
 	$message .= $passage_ligne;
 	
 //email de destination et objet du mail (formulaire de contact)
-	mail('toast.nine@gmail.com', 'Formulaire de contact : Éveil & Vous', $message, $headers);
+	mail('berenice.david@hetic.net', 'Formulaire de contact : Éveil & Vous', $message, $headers);
 	
 	//Lieu de retour après submit du formulaire
 	header('Location: contact.html#contactMe');	
