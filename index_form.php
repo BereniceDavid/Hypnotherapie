@@ -62,12 +62,6 @@ if(!empty($errors)){
   $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 	$headers .= "Content-Transfer-Encoding: 8bit".$passage_ligne;
 
-//		$headers .= "Content-Transfer-Encoding: 8bit";
-//	
-	//Code du mail reçu avec toutes les données rentrées par l'utilisateur
-//	$message = "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
-//	$message .= "Content-Transfer-Encoding: 8bit".$passage_ligne;
-//	$message .= $passage_ligne;
 	$message = '<html><body style="color:#000000;">';
 	$message .= "<p>Vous avez reçu une demande de contact provenant du site Éveil & Vous.</p><br/>";
 	$message .= "<p><strong>Prénom</strong></p><p>".$_POST['firstName']."</p><br/>";

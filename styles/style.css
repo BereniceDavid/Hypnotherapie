@@ -616,10 +616,21 @@ MENTIONS.HTML
 	font-size: 16px;
 }
 
-
 /********************
 
 /mentions.html
+
+TEMOIGNAGES.HTML
+
+********************/
+
+#addTestimony{
+	padding: 100px 0;
+}
+
+/********************
+
+/temoignages.html
 
 MEDIA QUERIES
 
