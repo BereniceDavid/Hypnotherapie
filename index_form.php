@@ -62,9 +62,9 @@ if(!empty($errors)){
   $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 	$headers .= "Content-Transfer-Encoding: 8bit".$passage_ligne;
 
-	$message = '<html><body style="color:#000000;">';
+		$message = '<html><body>';
 	$message .= "Vous avez reçu une demande de contact provenant du site Éveil & Vous.<br/><br/>";
-	$message .= "<strong>Prénom</strong<br/>".$_POST['firstName']."<br/><br/>";
+	$message .= "<strong>Prénom</strong><br/>".$_POST['firstName']."<br/><br/>";
 	$message .= "<strong>Nom</strong><br/>".$_POST['lastName']."<br/><br/>";
 	$message .= "<p><strong>Adresse</strong><br/>".$_POST['adress']." ".$_POST['complementAdress']."<br/><br/>";
 	$message .= "<strong>Ville</strong><br/>".$_POST['postalCode']." ".$_POST['town']."<br/><br/>";
