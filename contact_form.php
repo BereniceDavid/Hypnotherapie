@@ -54,7 +54,7 @@ session_start();
 if(!empty($errors)){
 	$_SESSION['errors'] = $errors;
 	$_SESSION['inputs'] = $_POST ;
-	header('Location: contact.html#contactMe');
+	header('Location: contact.php#contactMe');
 } else { 
 	$_SESSION['success'] = 1;
 	$headers = 'FROM: '.$_POST['email'].$passage_ligne;
@@ -81,7 +81,7 @@ if(!empty($errors)){
 	mail('berenice.david@hetic.net', 'Formulaire de contact : Éveil & Vous', $message, $headers);
 	
 	//Lieu de retour après submit du formulaire
-	header('Location: contact.html#contactMe');	
+	header('Location: contact.php#contactMe');	
 }
 
 ?>
