@@ -544,25 +544,65 @@ CONTACT.HTML
 	margin-right: 0.5vw;
 }
 
-.infosContact input[type=email] {
+.infosContact input[name=adress] {
 	width: 25vw;
 	height: 5vh;
-	margin-right: 5.4vw;
+	margin-right: 0.5vw;
+	margin-top: 1vh;
 }
 
-
-/*
-.infosContact input[name=firstName] {
-	margin-right: 2vw;
+.infosContact input[name=complementAdress],
+.infosContact input[name=postalCode] {
+	width: 11.5vw;
+	height: 5vh;
+	margin-right: 0.5vw;
 }
 
-.infosContact input[type=email],
-.infosContact input[type=tel],
+.infosContact input[name=town] {
+	width: 23vw;
+	height: 5vh;
+	margin-right: 0.5vw;
+	margin-top: 1vh;
+}
+
+.infosContact input[type=email] {
+	width: 25.5vw;
+	height: 5vh;
+	margin-top: 1vh;
+	margin-right: 0.5vw;
+}
+
+.infosContact label {
+	margin-top: 4vh;
+	margin-bottom: 5vh;
+	font-size: 2.5vh;
+	margin-right: 0.5vw;
+	color: #4c4c4c;
+}
+
+.infosContact select {
+	padding: 5px 10px;
+	font-size: 1.9vh;
+	color: #737373;
+	border: 1px solid #4c4c4c;
+	border-radius: 4px;
+}
+
 .infosContact textarea {
-	width: 42vw;
+	width: 50vw;
+	height: 30vh;
 }
-*/
 
+.infosContact button {
+	margin-top: 2vh;
+	color: #FFF;
+	font-size: 16px;
+	padding: 9px 35px;
+	border-radius: 5px;
+	background-color: #d06faa;
+	border: 1px solid #FFF;
+	transition: all 0.4s ease;
+}
 
 /********************
 

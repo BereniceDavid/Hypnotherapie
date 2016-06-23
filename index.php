@@ -182,45 +182,48 @@
 							<?php endif; ?>
 
 								<div class="row">
-									<div class="col-md-offset-2 col-md-8 center">
-										<input required type="text" name="firstName" placeholder="Prénom" />
-										<input required type="text" name="lastName" placeholder="Nom" />
-										<input required type="tel" name="phoneNumber" placeholder="Numéro de téléphone" />
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-offset-2 col-md-8 center">
-										<input required type="text" name="adress" placeholder="Adresse" />
-										<input type="text" name="complementAdress" placeholder="Complément d'adresse" />
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-offset-2 col-md-8 center">
-										<input required type="number" name="postalCode" placeholder="Code postal" maxlength="5" />
-										<input required type="text" name="town" placeholder="Ville" />
-									</div>
-								</div>
-								</div>
-								<div class="row">
-									<div class="center col-md-offset-2 col-md-8">
-										<input required type="email" name="email" placeholder="Email" />
-										<label for="clientSession">Avez-vous déjà eu une séance d'hypnothérapie</label>
-										<select name="firstSession" id="clientSession">
-											<option value="yes">Oui</option>
-											<option value="no" selected="selected">Non</option>
-										</select>
-									</div>
-								</div>
-								<div class="row">
-									<div class="center col-md-offset-2 col-md-8">
-										<textarea required name="comment" rows="6" cols="80" placeholder="Souhaitez-vous obtenir un renseignement en particulier ? Ou souhaitez-vous tout simplement prendre rendez-vous ?"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-offset-2 col-md-8 center">
-										<button type="submit">Envoyer</button>
-									</div>
-								</div>
+				<div class="col-md-offset-2 col-md-8 center">
+					<input required type="text" name="firstName" placeholder="Prénom" />
+					<input required type="text" name="lastName" placeholder="Nom" />
+					<input required type="tel" name="phoneNumber" placeholder="Numéro de téléphone" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8 center">
+					<input required type="text" name="adress" placeholder="Adresse" />
+					<input type="text" name="complementAdress" placeholder="Complément d'adresse" />
+					<input required type="number" name="postalCode" placeholder="Code postal" maxlength="5" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8 center">
+					<input required type="text" name="town" placeholder="Ville" />
+					<input required type="email" name="email" placeholder="Email" />
+				</div>
+			</div>
+			</div>
+			<div class="row">
+				<div class="center col-md-offset-2 col-md-8">
+					<label for="clientSession">Avez-vous déjà eu une séance d'hypnothérapie ?</label>
+					<select name="firstSession" id="clientSession">
+						<option value="yes">Oui</option>
+						<option value="no" selected="selected">Non</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="center col-md-offset-2 col-md-8">
+					<textarea required name="comment" rows="6" cols="80" placeholder="Pourquoi voulez-vous me contacter ? 
+					
+- Souhaitez-vous obtenir un renseignement en particulier ? 
+- Ou souhaitez-vous tout simplement prendre rendez-vous ?"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8 center">
+					<button type="submit" class="semiBold">Envoyer</button>
+				</div>
+			</div>
 			</form>
 		</section>
 
