@@ -8,7 +8,6 @@
 		<link rel="icon" type="image/png" href="images/logo_hypno-01.png" />
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,100,600,700' rel='stylesheet' type='text/css'>
-		<script src="https://use.fontawesome.com/0474f7d5d4.js"></script>
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
 
@@ -51,11 +50,10 @@
 				<h1 class="col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4 col-xs-offset-1 col-xs-10">Qui suis-je ?</h1>
 			</div>
 			<div class="row">
-				<div class="col-md-offset-2 center col-md-2 col-sm-offset-1 col-sm-3 col-xs-12">
-					<!--				<video src="" controls></video>-->
+				<div class="col-md-12 center col-sm-12 col-xs-12">
 					<img src="images/christelle-queraux.jpg" alt="Christelle Quéraux" />
 				</div>
-				<div class="col-md-5 col-sm-6 col-xs-offset-1 col-xs-10 justify" id="description">
+				<div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10 justify" id="description">
 					<p> Après une longue expérience en Ressources Humaines, j’ai souhaité allier ma passion des relations humaines et du développement personnel à l’hypnose thérapeutique dans l’objectif d’aider les personnes à favoriser leur mieux être.</p>
 					<p>Le respect, la sincérité, l’écoute, l’empathie et l’humilité sont les valeurs humaines qui m’animent au quotidien.</p>
 					<p>Mes séances d’hypnose se déroulent dans la bienveillance et avec beaucoup d’humanité.</p>
@@ -63,10 +61,6 @@
 				</div>
 			</div>
 		</section>
-		<div class="device-xs visible-xs"></div>
-		<div class="device-sm visible-sm"></div>
-		<div class="device-md visible-md"></div>
-		<div class="device-lg visible-lg"></div>
 
 		<!--		L'hypnothérapie pour quoi ?  -->
 		<section id="forWhat">
@@ -198,19 +192,19 @@
 									<div class="col-md-offset-2 col-md-8 center">
 										<input required type="text" name="adress" placeholder="Adresse" />
 										<input type="text" name="complementAdress" placeholder="Complément d'adresse" />
-										<input required type="number" name="postalCode" placeholder="Code postal" maxlength="5" />
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-offset-2 col-md-8 center">
+										<input required type="number" name="postalCode" placeholder="Code postal" maxlength="5" />
 										<input required type="text" name="town" placeholder="Ville" />
-										<input required type="email" name="email" placeholder="Email" />
 									</div>
 								</div>
 								</div>
 								<div class="row">
 									<div class="center col-md-offset-2 col-md-8">
-										<label for="clientSession">Avez-vous déjà eu une séance d'hypnothérapie ?</label>
+										<input required type="email" name="email" placeholder="Email" />
+										<label for="clientSession">Avez-vous déjà eu une séance d'hypnothérapie</label>
 										<select name="firstSession" id="clientSession">
 											<option value="yes">Oui</option>
 											<option value="no" selected="selected">Non</option>
@@ -219,15 +213,12 @@
 								</div>
 								<div class="row">
 									<div class="center col-md-offset-2 col-md-8">
-										<textarea required name="comment" rows="6" cols="80" placeholder="Pourquoi voulez-vous me contacter ? 
-					
-- Souhaitez-vous obtenir un renseignement en particulier ? 
-- Ou souhaitez-vous tout simplement prendre rendez-vous ?"></textarea>
+										<textarea required name="comment" rows="6" cols="80" placeholder="Souhaitez-vous obtenir un renseignement en particulier ? Ou souhaitez-vous tout simplement prendre rendez-vous ?"></textarea>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-offset-2 col-md-8 center">
-										<button type="submit" class="semiBold">Envoyer</button>
+										<button type="submit">Envoyer</button>
 									</div>
 								</div>
 			</form>
@@ -261,8 +252,9 @@
 		</footer>
 
 		<script src="scripts/jquery-2.2.4.min.js"></script>
-		<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-		<script src="scripts/main.js"></script>
+	<script src="https://use.fontawesome.com/0474f7d5d4.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+	<script src="scripts/main.js"></script>
 	</body>
 
 	</html>
