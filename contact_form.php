@@ -54,7 +54,7 @@ session_start();
 if(!empty($errors)){
 	$_SESSION['errors'] = $errors;
 	$_SESSION['inputs'] = $_POST ;
-	header('Location: contact.php#contactMe');
+	header('Location: contact.html#contactMe');
 } else { 
 	$_SESSION['success'] = 1;
 	$headers = 'FROM: '.$_POST['email'].$passage_ligne;
@@ -62,16 +62,16 @@ if(!empty($errors)){
   $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 	$headers .= "Content-Transfer-Encoding: 8bit".$passage_ligne;
 
-	$message = '<html><body style="color:#000000;">';
-	$message .= "<p>Vous avez reçu une demande de contact provenant du site Éveil & Vous.</p><br/>";
-	$message .= "<p><strong>Prénom</strong></p><p>".$_POST['firstName']."</p><br/>";
-	$message .= "<p><strong>Nom</strong></p><p>".$_POST['lastName']."</p><br/>";
-	$message .= "<p><strong>Adresse</strong></p><p>".$_POST['adress']." ".$_POST['complementAdress']."</p><br/>";
-	$message .= "<p><strong>Ville</strong></p><p>".$_POST['postalCode']." ".$_POST['town']."</p><br/>";
-	$message .= "<p><strong>Email</strong></p><p>".$_POST['email']."</p><br/>";
-	$message .= "<p><strong>Téléphone</strong></p><p>".$_POST['phoneNumber']."</p><br/>";
-	$message .= "<p'><strong>Le client a t'il déjà pratiqué une séance d'hypnothérapie</strong></p><p style='color:#000000;'>".$first."</p><br/>";
-	$message .= "<p><strong>Commentaire du client</strong></p><p>".$_POST['comment']."</p>";
+$message = '<html><body style="color:#000000;">';
+	$message .= "Vous avez reçu une demande de contact provenant du site Éveil & Vous.<br/><br/>";
+	$message .= "<strong>Prénom</strong<br/>".$_POST['firstName']."<br/><br/>";
+	$message .= "<strong>Nom</strong><br/>".$_POST['lastName']."<br/><br/>";
+	$message .= "<p><strong>Adresse</strong><br/>".$_POST['adress']." ".$_POST['complementAdress']."<br/><br/>";
+	$message .= "<strong>Ville</strong><br/>".$_POST['postalCode']." ".$_POST['town']."<br/><br/>";
+	$message .= "<strong>Email</strong><br/>".$_POST['email']."<br/><br/>";
+	$message .= "<strong>Téléphone</strong><br/>".$_POST['phoneNumber']."<br/><br/>";
+	$message .= "<strong>Le client a t'il déjà pratiqué une séance d'hypnothérapie</strong><br/>".$first."<br/><br/>";
+	$message .= "<strong>Commentaire du client</strong><br/>".$_POST['comment'];
 	$message .= '</body></html>';
 	$message .= $passage_ligne;
 	
@@ -81,7 +81,7 @@ if(!empty($errors)){
 	mail('berenice.david@hetic.net', 'Formulaire de contact : Éveil & Vous', $message, $headers);
 	
 	//Lieu de retour après submit du formulaire
-	header('Location: contact.php#contactMe');	
+	header('Location: contact.html#contactMe');	
 }
 
 ?>
