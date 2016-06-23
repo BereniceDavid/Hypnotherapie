@@ -1,4 +1,4 @@
-<!--<?php session_start(); ?>-->
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -19,7 +19,7 @@
 				<ul class="center">
 					<li class="col-md-offset-1 col-md-2 col-sm-offset-1 col-sm-2 col-xs-12"><a href="hypno.html" title="En savoir plus sur l'hypnothérapie">L'hypnothérapie</a></li>
 					<li class="col-md-2 col-sm-3 col-xs-12"><a href="quisuisje.html" title="Qui suis-je ?">Qui suis-je ?</a></li>
-					<li class="col-md-offset-2 col-md-2 col-sm-offset-1 col-sm-1 col-xs-12"><a href="contact.html" title="Contact" class="activePage">Contact</a></li>
+					<li class="col-md-offset-2 col-md-2 col-sm-offset-1 col-sm-1 col-xs-12"><a href="contact.php" title="Contact" class="activePage">Contact</a></li>
 					<li class="col-md-offset-0 col-md-2 col-sm-offset-1 col-sm-2"><a href="temoignages.html" title="Témoignages">Témoignages</a></li>
 				</ul>
 				<i class="fa fa-bars" aria-hidden="true"></i>
@@ -39,7 +39,7 @@
 		</div>
 		<form method="post" action="contact_form.php">
 
-			<!--			<?php  if(array_key_exists('errors', $_SESSION)): ?>
+<?php  if(array_key_exists('errors', $_SESSION)): ?>
 				<div class="col-md-offset-1 col-md-10 alert alert-danger">
 					<?= implode('</br>', $_SESSION['errors']); ?>
 				</div>
@@ -49,7 +49,7 @@
 						<div class="col-md-offset-1 col-md-10 alert alert-success">
 							Votre email a bien été envoyé.
 						</div>
-						<?php endif; ?>-->
+						<?php endif; ?>
 
 			<div class="row">
 				<div class="col-md-offset-2 col-md-8 center">
@@ -130,8 +130,8 @@
 </body>
 
 </html>
-<!--	<?php
+<?php
 		unset($_SESSION['inputs']);
 		unset($_SESSION['success']);
 		unset($_SESSION['errors']); 
-	?>-->
+	?>
