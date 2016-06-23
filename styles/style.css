@@ -822,24 +822,6 @@ TEMOIGNAGES.HTML
 MEDIA QUERIES
 
 ********************/
-		.infosContact input[name=firstName],
-		.infosContact input[name=lastName],
-		.infosContact input[name=phoneNumber],
-		.infosContact input[name=adress],
-		.infosContact input[name=postalCode],
-		.infosContact input[name=town],
-		.infosContact input[name=email],
-		.infosContact textarea,
-		.infosContact input[name=complementAdress] {
-			width: 70vw;
-		}
-		.infosContact textarea {
-			margin-top: 5vh;
-		}
-		.infosContact select {
-			margin-bottom:1vh;
-		}
-		
 
 
 /**  Téléphone  *  767px*/
@@ -882,6 +864,23 @@ MEDIA QUERIES
 	}
 	#whatIs p {
 		font-size: 3vw;
+	}
+	.infosContact input[name=firstName],
+	.infosContact input[name=lastName],
+	.infosContact input[name=phoneNumber],
+	.infosContact input[name=adress],
+	.infosContact input[name=postalCode],
+	.infosContact input[name=town],
+	.infosContact input[name=email],
+	.infosContact textarea,
+	.infosContact input[name=complementAdress] {
+		width: 70vw;
+	}
+	.infosContact textarea {
+		margin-top: 5vh;
+	}
+	.infosContact select {
+		margin-bottom: 1vh;
 	}
 }
 
